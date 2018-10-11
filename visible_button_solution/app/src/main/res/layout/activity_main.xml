@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textVisibleTarget"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:text="HELLO WORLD!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnVisibleTrue"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:text="VISIBLE TRUE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textVisibleTarget" />
+
+    <Button
+        android:id="@+id/btnVisibleFalse"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:text="VISIBLE FALSE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVisibleTrue" />
+
+    <Button
+        android:id="@+id/btnVisibleGone"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:text="VISIBLE GONE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVisibleFalse" />
+</android.support.constraint.ConstraintLayout>
